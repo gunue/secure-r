@@ -15,9 +15,11 @@ httr::set_config(httr::config(ssl_verifypeer = FALSE ))
 # Secret fetch with REST-API
 ###################################################################################
 
-secret1path <- '/secrets/swotest/variable/secrets/username?version=1' #first secret set
-secret2path <- '/secrets/swotest/variable/secrets/password?version=4'
-secret0path <- '/secrets/swotest/variable/secrets/endpoint' #latest
+#secret1path <- '/secrets/swo-uat/variable/secrets/username?version=1' #first secret set
+#secret2path <- '/secrets/swo-uat/variable/secrets/password?version=4'
+secret1path <- '/secrets/swo-uat/variable/secrets/username'
+secret2path <- '/secrets/swo-uat/variable/secrets/password'
+secret0path <- '/secrets/swo-uat/variable/secrets/endpoint' #latest
 follower_url <- 'https://conjur-follower.cyberark-conjur-jwt.svc.cluster.local'
 conjuraccesstoken <- '/run/conjur/access-token'
 
